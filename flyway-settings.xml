@@ -1,0 +1,18 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <profiles>
+        <profile>
+            <id>flyway</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <db.url>jdbc:jtds:sqlserver://127.0.0.1:1433;databaseName=flyway</db.url>
+                <db.driver>net.sourceforge.jtds.jdbc.Driver</db.driver>
+                <db.user>username</db.user>
+                <db.pass>password</db.pass>
+            </properties>
+        </profile>
+    </profiles>
+</settings>
